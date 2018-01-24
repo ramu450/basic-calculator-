@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background:skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    padding: 2%;
+
+}
+li{
+    padding-left:2%;
+    padding-right:2%;
+    color: white;
+}
+body{
+    margin: 0;
+}

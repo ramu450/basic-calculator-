@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cal2</title>
+</head>
+<body>
+  <div class="first">
+
+  </div>
+  <div class="main">
+  <div class="display">
+    <input type="text" [(ngModel)]="inputs.num1">
+  </div>
+  <div class="inputs">
+   <div class="num">
+      <button (click)="calculator('9')">9</button>
+      <button (click)="calculator('8')">8</button>
+      <button (click)="calculator('7')">7</button>
+      <button (click)="calculator('6')">6</button>
+      <button (click)="calculator('5')">5</button>
+         <button (click)="calculator('4')">4</button>
+         <button (click)="calculator('3')">3</button>
+         <button (click)="calculator('2')">2</button>
+         <button (click)="calculator('1')">1</button>
+         <button (click)="calculator('0')">0</button>
+   </div>
+   <div class="oper">
+     <div class="generator">
+        <button (click)="output()">=</button>
+         <button (click)="clear()">C</button>
+     </div>
+     <div class="perform">
+        <button (click)="buttonclick('+')">+</button>
+         <button (click)="buttonclick('-')">-</button>
+         <button (click)="buttonclick('*')">*</button>
+         <button (click)="buttonclick('/')">/</button>
+     </div>
+      
+   </div>
+  </div>
+</div>
+<div class="second">
+
+</div>
+</body>
+</html>

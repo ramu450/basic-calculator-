@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="cal1">
+    <div class="inputs">
+      <div><label>Enter the inputs below</label></div>
+      <input type="number" [(ngModel)]="input.num1" name="num1" placeholder="input1">
+      <span>{{operator}}</span>
+      <input type="number" [(ngModel)]="input.num2" name="num2" placeholder="input2">
+       <button (click)="calculation('=')">Generate</button>
+    </div>
+      <div class="operators">
+        <label>Select operators</label>
+         <button (click)="buttonclick('+')">+</button>
+         <button (click)="buttonclick('-')">-</button>
+         <button (click)="buttonclick('*')">*</button>
+         <button (click)="buttonclick('/')">/</button>
+    </div>
+    <div class="history"> 
+      <label>History</label>
+      <hr>
+      <div >
+        <ul>
+          <li >{{n1}}</li>
+          <li >{{assign}}</li>
+          <li >{{n2}}</li>
+          <li>{{equal}}</li>
+          <li >{{result}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
